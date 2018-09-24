@@ -17,7 +17,7 @@ namespace ConsoleApplication2
 
             Console.WriteLine("Add meg a számot!");
             int nSzam = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine(nSzam);
+            Console.WriteLine("Bekérendő számok mennyisége: " + nSzam);
             Console.ReadLine();
             int[] t = new int[nSzam];
 
@@ -25,11 +25,18 @@ namespace ConsoleApplication2
             {
                 Console.WriteLine("Add meg a "+ (i + 1) + ". számot!");
                 t[i] = Convert.ToInt32(Console.ReadLine());
-
             }
             Console.ReadLine();
 
+            int max;
 
+            //Maximum kiválasztás tétele
+            max = t[0];
+            for (int i = 0; i < t.Length; i++)
+                if (t[i] > max)
+                    max = t[i];
+
+            Console.WriteLine("A tömb legnagyobb értéke: " + max);
             //atmero = double.Parse(Console.ReadLine());
             //double asdd;
 
