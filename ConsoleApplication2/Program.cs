@@ -15,10 +15,9 @@ namespace ConsoleApplication2
             //    "\nAdd meg a bekérendő számok mennyiségét! (most)");
             //String atmero = Console.ReadLine();
 
-            Console.WriteLine("Add meg a számot!");
+            Console.WriteLine("Add meg a bekérendő számok mennyiségét!");
             int nSzam = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("Bekérendő számok mennyisége: " + nSzam);
-            Console.ReadLine();
             int[] t = new int[nSzam];
 
             for (int i = 0; i < nSzam; i++)
@@ -26,7 +25,6 @@ namespace ConsoleApplication2
                 Console.WriteLine("Add meg a "+ (i + 1) + ". számot!");
                 t[i] = Convert.ToInt32(Console.ReadLine());
             }
-            Console.ReadLine();
 
             int max;
 
@@ -37,6 +35,8 @@ namespace ConsoleApplication2
                     max = t[i];
 
             Console.WriteLine("A tömb legnagyobb értéke: " + max);
+            Console.ReadLine();
+
             //atmero = double.Parse(Console.ReadLine());
             //double asdd;
 
